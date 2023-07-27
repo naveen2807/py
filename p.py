@@ -9,6 +9,7 @@ TABLE_NAME = "Music3"
 
 client = boto3.client(
     'dynamodb',
+     endpoint_url='http://localhost:8000', 
      aws_secret_access_key='naveen',
     aws_access_key_id='1234',
     region_name=AWS_REGION)
