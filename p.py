@@ -4,8 +4,8 @@ import boto3
 
 # AWS_ACCESS = ""
 # AWS_SECRET = ""
-AWS_REGION = "eu-west-3"
-TABLE_NAME = "users"
+AWS_REGION = "us-east-1"
+TABLE_NAME = "Music"
 
 client = boto3.client(
     'dynamodb',
@@ -14,7 +14,7 @@ client = boto3.client(
     region_name=AWS_REGION)
 
 response = client.scan(
-    TableName='Music',
+    TableName=TABLE_NAME,
     Select='ALL_ATTRIBUTES',
     ReturnConsumedCapacity='TOTAL'
 )
