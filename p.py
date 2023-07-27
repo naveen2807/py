@@ -19,6 +19,6 @@ response = client.scan(
     Select='ALL_ATTRIBUTES',
     ReturnConsumedCapacity='TOTAL'
 )
-# print(json.dumps(response))
+ print(json.dumps(response))
 with open(TABLE_NAME+'.json', 'w') as f:
     print(json.dumps(response), file=f)
