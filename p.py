@@ -20,5 +20,5 @@ response = client.scan(
     ReturnConsumedCapacity='TOTAL'
 )
  print(json.dumps(response))
-with open(TABLE_NAME+'.json', 'w') as f:
+with open('D:\sample\'TABLE_NAME+'.json', 'w') as f:
     print(json.dumps(response), file=f)
