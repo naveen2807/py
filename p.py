@@ -9,8 +9,8 @@ TABLE_NAME = "Music3"
 
 client = boto3.client(
     'dynamodb',
-    # aws_secret_access_key=AWS_SECRET,
-    # aws_access_key_id=AWS_ACCESS,
+     aws_secret_access_key='naveen',
+    aws_access_key_id='1234',
     region_name=AWS_REGION)
 
 response = client.scan(
