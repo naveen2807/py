@@ -14,7 +14,7 @@ client = boto3.client(
     region_name=AWS_REGION)
 
 response = client.scan(
-    TableName=Music,
+    TableName='Music',
     Select='ALL_ATTRIBUTES',
     ReturnConsumedCapacity='TOTAL'
 )
