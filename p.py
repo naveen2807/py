@@ -5,7 +5,7 @@ import boto3
 # AWS_ACCESS = ""
 # AWS_SECRET = ""
 AWS_REGION = "us-east-1"
-TABLE_NAME = "Music"
+TABLE_NAME = "Music3"
 
 client = boto3.client(
     'dynamodb',
